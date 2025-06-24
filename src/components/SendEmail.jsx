@@ -16,7 +16,7 @@ const SendEmailForm = () => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://smtp-2-z2yv.onrender.com/send-email', {
+      const res = await fetch('https://smtp-2-z2yv.onrender.com/send-emails', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
